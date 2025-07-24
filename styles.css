@@ -1,0 +1,42 @@
+body {
+    font-family: 'Inter', sans-serif;
+    }
+.animated-bg {
+    background: linear-gradient(135deg, #4b0082, #1e1b4b, #7e22ce);
+    background-size: 600% 600%;
+    animation: gradientMove 15s ease infinite;
+    }
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glow-blob {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.4;
+    animation: float 10s ease-in-out infinite;
+}
+
+.blob1 {
+    background: #7c3aed;
+    top: 10%;
+    left: -10%;
+}
+
+.blob2 {
+    background: #db2777;
+    bottom: 5%;
+    right: -10%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(20deg); }
+}
