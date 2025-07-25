@@ -25,7 +25,7 @@ async function getStatus() {
         if (firstActivity) {
             const name = firstActivity.name;
             const details = firstActivity.details || "";
-            activityElement.innerText = ` ${name} ${details}`;
+            activityElement.innerText = ` ${name}: ${details}`;
 
             // Extract image
             if (firstActivity.assets && firstActivity.assets.large_image) {
