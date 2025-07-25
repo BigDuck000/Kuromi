@@ -50,13 +50,13 @@ async function getStatus() {
         } else {
             activityElement.innerText = "Not doing anything special.";
             imageElement.innerHTML = `
-                    <img src="1.jpg" alt="Activity Image" class="w-24 h-24 mx-auto mt-2 rounded-lg shadow-md" />
+                    <img src="1.png" alt="Activity Image" class="w-24 h-24 mx-auto mt-2 rounded-lg shadow-md" />
                 `;
         }
     } else {
         activityElement.innerText = "Not doing anything special.";
         imageElement.innerHTML = `
-                    <img src="1.jpg" alt="Activity Image" class="w-24 h-24 mx-auto mt-2 rounded-lg shadow-md" />
+                    <img src="1.png" alt="Activity Image" class="w-24 h-24 mx-auto mt-2 rounded-lg shadow-md" />
                 `;
     }
 }
